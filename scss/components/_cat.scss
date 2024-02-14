@@ -1,0 +1,67 @@
+.cat {
+    display: flex;
+    align-items: center;
+
+    &__box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 250px;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 150px;
+    }
+
+    &__title {
+        position: absolute;
+        top: 180px;
+        width: 100%;
+        min-width: 250px;
+        background-color: var(--color-primary-light);
+        padding: 12px 24px;
+        border: solid 2px var(--color-primaty-dark);
+        border-radius: 16px;
+        text-align: center;
+        font-size: 24px;
+        color: var(--color-primaty-dark);
+        box-shadow: 0px 0 15px 1px var(--color-secondary-light);
+    }
+
+    &__button {
+        padding: 8px 16px;
+        font-family: "Architects Daughter", cursive;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 2px solid var(--color-primaty-dark);
+        cursor: pointer;
+
+        &--yes {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: var(--color-primary-light);
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        &--no {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 60px;
+            background-color: var(--color-primary-pink);
+            color: var(--color-primary-light);
+            border-color: var(--color-primary-light);
+            z-index: 2;
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+.container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        padding: 48px;
+    }
+
+}

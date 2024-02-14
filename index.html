@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine`s day</title>
+    <link rel="shortcut icon" href="./image/icon-cat.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+   <div class="container">
+        <div class="cat">
+            <div class="cat__box">
+                <img class="cat__image" src="./image/mochi-cat-love.gif" alt="cat-love">
+                <h2 class="cat__title">Do you love me?</h2>
+                <button class="cat__button cat__button--yes button-yes open-button">Yes!</button>
+                <button class="cat__button cat__button--no button-no">No.</button>
+            </div>
+        </div>
+   </div>
+    <div class="positive-modal backdrop is-hidden">
+        <div class="modal">
+            <button class="close-button modal__button">
+                <svg width="32" height="32">
+                    <use href="./image/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <img class="modal__image" src="./image/cat-couple.gif" alt="cat-couple">
+            <h2 class="modal__text">Happy Valentine`s Day!<br>I love you too!</h2>
+        </div>
+    </div>
+    <div class="negative-modal backdrop is-hidden">
+        <div class="modal">
+            <img class="modal__image" src="./image/mochi-cat-cry.gif" alt="cat-couple">
+            <h2 class="modal__text">I can't believe it <br>Try again pls</h2>
+        </div>
+    </div>
+   <script src="./js/negative-modal.js"></script>
+   <script src="./js/size.js"></script> 
+   <script src="./js/positive-modal.js"></script>
+</body>
+</html>
